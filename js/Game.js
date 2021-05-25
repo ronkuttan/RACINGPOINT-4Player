@@ -367,7 +367,7 @@ class Game {
    
 
     if(player.distance < 32200){
-      if(keyIsDown(38) && player.index !== null ){
+      if(keyIsDown(38) && player.index !== null || mousePressedOver(moveLeft) && player.index !== null ){
           yVel += 0.95;
          
           if(keyIsDown(37) || mousePressedOver(moveLeft)){
