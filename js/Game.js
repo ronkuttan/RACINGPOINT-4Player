@@ -134,6 +134,7 @@ class Game {
     moveRight.addImage("up",moveRight_img)
     moveRight.scale = 0.15
 
+    
     ob15 = createSprite(300,-11000,10,35000);
     ob15.visible = false;
 
@@ -320,6 +321,34 @@ class Game {
         xVel -= 8
         hitSound.play();
       }  
+      if( cars[index - 1].isTouching(car1)){
+        console.log("end")
+        cars[index - 1].bounceOff(car1);
+        xVel -= 8
+        
+      }  
+      if( cars[index - 1].isTouching(car2)){
+        console.log("end")
+        cars[index - 1].bounceOff(car2);
+        xVel -= 8
+        
+      } 
+           if( cars[index - 1].isTouching(car3)){
+        console.log("end")
+        cars[index - 1].bounceOff(car3);
+        xVel -= 8
+        
+      }  
+      if( cars[index - 1].isTouching(car4)){
+        console.log("end")
+        cars[index - 1].bounceOff(car4);
+        xVel -= 8
+        
+      } 
+      
+       
+        
+ 
       
        
         
